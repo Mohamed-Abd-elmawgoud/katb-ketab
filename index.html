@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed &amp; Malak — Katb Ketab Invitation</title>
+    <meta name="description" content="Together with their families, Mohamed & Malak joyfully invite you to witness and celebrate their Katb Ketab on Friday, December 25, 2026.">
+
+    <!-- Open Graph Meta Tags for WhatsApp & Social Sharing Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohamed & Malak — Katb Ketab Invitation">
+    <meta property="og:description" content="Friday, December 25, 2026 • 4:00 PM – 6:00 PM at Abdelmoniem Ryadh Mosque (Lotus Hall), Smouha, Alexandria.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Cormorant Garamond, Cinzel, Amiri (Arabic calligraphy), & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: {
+                            50: '#FDFBF7',
+                            100: '#FAF6EE',
+                            200: '#F3EBDD',
+                            300: '#E8DAC3',
+                        },
+                        emerald: {
+                            850: '#0D3B2E',
+                            900: '#092B21',
+                            950: '#051C15',
+                        },
+                        gold: {
+                            300: '#E2C785',
+                            400: '#D4AF37',
+                            500: '#C5A059',
+                            600: '#A6823C',
+                            700: '#856529',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        display: ['"Cinzel"', 'serif'],
+                        arabic: ['"Amiri"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(135deg, #DFC278 0%, #B89146 50%, #DFC278 100%)',
+                        'emerald-radial': 'radial-gradient(circle at top, #124939 0%, #092B21 75%, #051C15 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Islamic Geometric Lattice Watermark */
+        .islamic-pattern {
+            background-color: #FAF6EE;
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C5A059' stroke-width='0.75' stroke-opacity='0.14'%3E%3Cpath d='M40 0 L51.7 28.3 L80 40 L51.7 51.7 L40 80 L28.3 51.7 L0 40 L28.3 28.3 Z'/%3E%3Crect x='11.7' y='11.7' width='56.6' height='56.6'/%3E%3Crect x='11.7' y='11.7' width='56.6' height='56.6' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .emerald-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23E2C785' stroke-width='0.7' stroke-opacity='0.1'%3E%3Cpath d='M40 0 L51.7 28.3 L80 40 L51.7 51.7 L40 80 L28.3 51.7 L0 40 L28.3 28.3 Z'/%3E%3Crect x='11.7' y='11.7' width='56.6' height='56.6' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Shimmering Gold Foil Text */
+        .text-gold-foil {
+            background: linear-gradient(120deg, #9C7932 0%, #D9BC75 30%, #B38B3F 55%, #E6CC8A 80%, #9C7932 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 6s linear infinite;
+        }
+
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+
+        /* Reveal on Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Envelope Overlay Transition */
+        #envelope-cover {
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
+        }
+
+        #envelope-cover.opened {
+            opacity: 0;
+            transform: scale(1.04);
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Subtle Floating Seal Pulse */
+        @keyframes gentleFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        .float-slow {
+            animation: gentleFloat 4s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6EE;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body class="islamic-pattern text-emerald-950 font-sans antialiased selection:bg-gold-500/20 selection:text-emerald-900 overflow-x-hidden">
+
+    <!-- ==================== INTERACTIVE COVER / ENVELOPE OVERLAY ==================== -->
+    <div id="envelope-cover" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-emerald-radial emerald-pattern px-6 text-center text-ivory-100">
+        <!-- Decorative Outer Frame -->
+        <div class="absolute inset-4 sm:inset-8 border border-gold-500/35 rounded-2xl pointer-events-none"></div>
+        <div class="absolute inset-6 sm:inset-10 border border-gold-400/20 rounded-xl pointer-events-none"></div>
+
+        <!-- Corner Arabesque Flourishes -->
+        <svg class="absolute top-6 left-6 sm:top-10 sm:left-10 w-12 h-12 text-gold-400/60 pointer-events-none" viewBox="0 0 64 64" fill="none">
+            <path d="M4 60V24C4 12.954 12.954 4 24 4H60" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M12 52V28C12 19.163 19.163 12 28 12H52" stroke="currentColor" stroke-width="0.8"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+        </svg>
+        <svg class="absolute top-6 right-6 sm:top-10 sm:right-10 w-12 h-12 text-gold-400/60 rotate-90 pointer-events-none" viewBox="0 0 64 64" fill="none">
+            <path d="M4 60V24C4 12.954 12.954 4 24 4H60" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M12 52V28C12 19.163 19.163 12 28 12H52" stroke="currentColor" stroke-width="0.8"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+        </svg>
+        <svg class="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 w-12 h-12 text-gold-400/60 -rotate-90 pointer-events-none" viewBox="0 0 64 64" fill="none">
+            <path d="M4 60V24C4 12.954 12.954 4 24 4H60" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M12 52V28C12 19.163 19.163 12 28 12H52" stroke="currentColor" stroke-width="0.8"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+        </svg>
+        <svg class="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 w-12 h-12 text-gold-400/60 rotate-180 pointer-events-none" viewBox="0 0 64 64" fill="none">
+            <path d="M4 60V24C4 12.954 12.954 4 24 4H60" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M12 52V28C12 19.163 19.163 12 28 12H52" stroke="currentColor" stroke-width="0.8"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+        </svg>
+
+        <div class="relative z-10 max-w-md mx-auto flex flex-col items-center">
+            <!-- Bismillah Calligraphy -->
+            <p class="font-arabic text-2xl sm:text-3xl text-gold-300 tracking-wide mb-2" dir="rtl">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </p>
+            <p class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-ivory-200/75 mb-8">
+                In the Name of Allah, the Most Gracious, the Most Merciful
+            </p>
+
+            <!-- Monogram Crest -->
+            <div class="float-slow relative w-28 h-28 sm:w-32 sm:h-32 mb-8 flex items-center justify-center">
+                <!-- Octagonal Rub el Hizb Gold Frame -->
+                <svg class="absolute inset-0 w-full h-full text-gold-400" viewBox="0 0 120 120" fill="none">
+                    <rect x="22" y="22" width="76" height="76" stroke="currentColor" stroke-width="1.2"/>
+                    <rect x="22" y="22" width="76" height="76" transform="rotate(45 60 60)" stroke="currentColor" stroke-width="1.2"/>
+                    <circle cx="60" cy="60" r="42" stroke="currentColor" stroke-width="0.7" stroke-dasharray="2 3"/>
+                </svg>
+                <span class="font-display text-2xl sm:text-3xl tracking-widest text-gold-300 font-medium">
+                    M <span class="font-serif italic text-gold-400 text-xl">&amp;</span> M
+                </span>
+            </div>
+
+            <p class="font-serif italic text-lg sm:text-xl text-ivory-200/90 mb-2">
+                You are cordially invited to the Katb Ketab of
+            </p>
+            <h1 class="font-display text-3xl sm:text-4xl tracking-[0.14em] text-gold-300 font-semibold uppercase mb-3">
+                Mohamed &amp; Malak
+            </h1>
+            <p class="text-xs uppercase tracking-[0.25em] text-ivory-200/75 mb-10">
+                Friday &bull; 25 December 2026 &bull; Alexandria
+            </p>
+
+            <!-- Open Invitation CTA -->
+            <button id="open-invitation-btn" type="button"
+                class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gold-gradient text-emerald-950 font-semibold text-xs sm:text-sm uppercase tracking-[0.22em] shadow-[0_10px_35px_rgba(197,160,89,0.35)] hover:shadow-[0_14px_40px_rgba(226,199,133,0.5)] transition-all duration-300 active:scale-95 cursor-pointer">
+                <span>Open Invitation</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== FLOATING TOP BAR (CELEBRATION MUSIC / SHARE) ==================== -->
+    <header class="sticky top-0 z-30 backdrop-blur-md bg-ivory-50/80 border-b border-gold-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+            <a href="#top" class="font-display text-sm sm:text-base tracking-[0.2em] text-emerald-900 font-semibold">
+                M <span class="font-serif italic text-gold-600">&amp;</span> M
+            </a>
+
+            <nav class="hidden sm:flex items-center gap-7 text-xs uppercase tracking-[0.2em] text-emerald-900/80 font-medium">
+                <a href="#details" class="hover:text-gold-600 transition-colors">Ceremony</a>
+                <a href="#venue" class="hover:text-gold-600 transition-colors">Location</a>
+                <a href="#rsvp" class="hover:text-gold-600 transition-colors">RSVP &amp; Wishes</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <!-- Celebration Audio Player (place music.mp3 in your repo root) -->
+                <audio id="celebration-audio" src="music.mp3" loop preload="metadata"></audio>
+                <button id="audio-toggle-btn" type="button" title="Play or Pause Celebration Track"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gold-500/40 bg-ivory-100 hover:bg-gold-500/10 text-emerald-900 text-xs transition-colors cursor-pointer">
+                    <svg id="audio-icon-off" class="w-3.5 h-3.5 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/>
+                    </svg>
+                    <svg id="audio-icon-on" class="hidden w-3.5 h-3.5 text-gold-600 animate-pulse" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
+                    </svg>
+                    <span id="audio-label" class="hidden sm:inline tracking-wider uppercase text-[10px] font-medium">Music</span>
+                </button>
+
+                <!-- Share Link Button -->
+                <button id="share-btn" type="button"
+                    class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-900 text-ivory-50 hover:bg-emerald-850 text-[11px] uppercase tracking-wider font-medium transition-colors cursor-pointer">
+                    <svg class="w-3.5 h-3.5 text-gold-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/>
+                    </svg>
+                    <span>Share</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast-banner" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300">
+        <div class="px-5 py-3 rounded-full bg-emerald-900 text-ivory-50 border border-gold-400/50 shadow-xl flex items-center gap-2.5 text-xs sm:text-sm font-medium whitespace-nowrap">
+            <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+            <span id="toast-message">Invitation link copied to clipboard</span>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN INVITATION CONTENT ==================== -->
+    <main id="top" class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-14 space-y-12 sm:space-y-16">
+
+        <!-- 1. HERO CARD WITH ISLAMIC ARCH & BISMILLAH -->
+        <section class="reveal relative bg-ivory-50/95 rounded-[2rem] p-6 sm:p-12 md:p-16 shadow-[0_20px_60px_-15px_rgba(9,43,33,0.12)] border border-gold-500/35 overflow-hidden text-center">
+            <!-- Inner Decorative Gold Border -->
+            <div class="absolute inset-3 sm:inset-5 border border-gold-500/25 rounded-[1.5rem] pointer-events-none"></div>
+
+            <!-- Top Islamic Arch / Mihrab Motif -->
+            <div class="relative z-10 flex flex-col items-center">
+                <svg class="w-24 h-12 sm:w-32 sm:h-14 text-gold-500/80 mb-4" viewBox="0 0 160 70" fill="none">
+                    <path d="M10 68C10 42 48 34 80 8C112 34 150 42 150 68" stroke="currentColor" stroke-width="1.3"/>
+                    <path d="M24 68C24 47 54 40 80 18C106 40 136 47 136 68" stroke="currentColor" stroke-width="0.7" stroke-dasharray="2 2"/>
+                    <circle cx="80" cy="8" r="2.5" fill="currentColor"/>
+                    <path d="M74 44L80 38L86 44L80 50L74 44Z" stroke="currentColor" stroke-width="1"/>
+                </svg>
+
+                <!-- Bismillah Header -->
+                <p class="font-arabic text-2xl sm:text-3xl text-emerald-900 mb-1" dir="rtl">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </p>
+                <p class="text-[11px] sm:text-xs uppercase tracking-[0.24em] text-gold-700 font-medium mb-8">
+                    In the Name of Allah, the Most Gracious, the Most Merciful
+                </p>
+
+                <!-- Quranic Verse Quote -->
+                <blockquote class="max-w-lg mx-auto mb-9 px-3">
+                    <p class="font-serif italic text-lg sm:text-xl md:text-2xl text-emerald-900/90 leading-relaxed">
+                        &ldquo;And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy.&rdquo;
+                    </p>
+                    <footer class="mt-2.5 text-[11px] uppercase tracking-[0.25em] text-gold-700 font-semibold">
+                        Surah Ar-Rum &bull; 30:21
+                    </footer>
+                </blockquote>
+
+                <!-- Ornamental Divider -->
+                <div class="flex items-center justify-center gap-3 w-full max-w-xs mx-auto mb-9">
+                    <span class="h-px flex-1 bg-gradient-to-r from-transparent to-gold-500/60"></span>
+                    <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/>
+                    </svg>
+                    <span class="h-px flex-1 bg-gradient-to-l from-transparent to-gold-500/60"></span>
+                </div>
+
+                <!-- Invitation Wording -->
+                <p class="text-xs sm:text-sm uppercase tracking-[0.26em] text-emerald-900/75 font-medium mb-4">
+                    Together with their families
+                </p>
+
+                <!-- Couple Names -->
+                <div class="my-2">
+                    <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-semibold tracking-[0.1em] text-gold-foil uppercase leading-tight">
+                        Mohamed
+                    </h1>
+                    <div class="my-2 sm:my-3 flex items-center justify-center gap-4">
+                        <span class="h-px w-10 sm:w-14 bg-gold-500/40"></span>
+                        <span class="font-serif italic text-2xl sm:text-3xl text-emerald-900">&amp;</span>
+                        <span class="h-px w-10 sm:w-14 bg-gold-500/40"></span>
+                    </div>
+                    <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-semibold tracking-[0.1em] text-gold-foil uppercase leading-tight">
+                        Malak
+                    </h1>
+                </div>
+
+                <p class="mt-6 max-w-md mx-auto font-serif text-lg sm:text-xl text-emerald-900/90 leading-relaxed">
+                    Joyfully request the honor of your presence and prayers as they unite in marriage at their
+                </p>
+
+                <!-- Event Badge -->
+                <div class="mt-5 inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-emerald-900 text-gold-300 border border-gold-400/40 shadow-md">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                    <span class="font-display text-xs sm:text-sm uppercase tracking-[0.25em] font-medium">
+                        Katb Ketab Ceremony
+                    </span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. LIVE COUNTDOWN TIMER SECTION -->
+        <section class="reveal bg-emerald-radial emerald-pattern rounded-[2rem] p-6 sm:p-10 text-center text-ivory-50 shadow-[0_20px_50px_-12px_rgba(9,43,33,0.28)] border border-gold-500/30">
+            <p class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold-300 font-medium mb-2">
+                Counting Down to Our Blessed Day
+            </p>
+            <h2 class="font-serif italic text-2xl sm:text-3xl text-ivory-100 mb-7">
+                Until We Say &ldquo;Qabiltu&rdquo;
+            </h2>
+
+            <div id="countdown-grid" class="grid grid-cols-4 gap-2.5 sm:gap-5 max-w-xl mx-auto">
+                <div class="bg-emerald-950/65 backdrop-blur-sm border border-gold-400/30 rounded-2xl py-4 px-2 sm:py-5">
+                    <span id="cd-days" class="block font-display text-2xl sm:text-4xl md:text-5xl text-gold-300 font-semibold">00</span>
+                    <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-ivory-200/75">Days</span>
+                </div>
+                <div class="bg-emerald-950/65 backdrop-blur-sm border border-gold-400/30 rounded-2xl py-4 px-2 sm:py-5">
+                    <span id="cd-hours" class="block font-display text-2xl sm:text-4xl md:text-5xl text-gold-300 font-semibold">00</span>
+                    <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-ivory-200/75">Hours</span>
+                </div>
+                <div class="bg-emerald-950/65 backdrop-blur-sm border border-gold-400/30 rounded-2xl py-4 px-2 sm:py-5">
+                    <span id="cd-minutes" class="block font-display text-2xl sm:text-4xl md:text-5xl text-gold-300 font-semibold">00</span>
+                    <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-ivory-200/75">Minutes</span>
+                </div>
+                <div class="bg-emerald-950/65 backdrop-blur-sm border border-gold-400/30 rounded-2xl py-4 px-2 sm:py-5">
+                    <span id="cd-seconds" class="block font-display text-2xl sm:text-4xl md:text-5xl text-gold-300 font-semibold">00</span>
+                    <span class="mt-1 block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-ivory-200/75">Seconds</span>
+                </div>
+            </div>
+
+            <p id="countdown-status" class="mt-5 text-xs text-gold-300/80 tracking-widest uppercase">
+                Friday, 25 December 2026 &bull; 4:00 PM (Egypt Time)
+            </p>
+        </section>
+
+        <!-- 3. CEREMONY & VENUE DETAILS CARD -->
+        <section id="details" class="reveal bg-ivory-50/95 rounded-[2rem] p-6 sm:p-12 shadow-[0_20px_60px_-15px_rgba(9,43,33,0.1)] border border-gold-500/35">
+            <div class="text-center mb-10">
+                <p class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold-700 font-semibold mb-2">
+                    When &amp; Where
+                </p>
+                <h2 class="font-display text-2xl sm:text-4xl text-emerald-900 tracking-[0.08em] uppercase">
+                    Ceremony Details
+                </h2>
+                <div class="mt-3 w-16 h-0.5 bg-gold-500/60 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Date & Time Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Date Card -->
+                <div class="flex flex-col items-center text-center p-6 sm:p-8 rounded-2xl bg-ivory-100/80 border border-gold-500/25">
+                    <div class="w-12 h-12 rounded-full bg-emerald-900/10 text-emerald-900 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+                        </svg>
+                    </div>
+                    <span class="text-xs uppercase tracking-[0.24em] text-gold-700 font-semibold mb-1">The Date</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-emerald-950">
+                        Friday, December 25
+                    </h3>
+                    <p class="font-display text-base tracking-[0.2em] text-emerald-900/80 mt-1">
+                        2026
+                    </p>
+                </div>
+
+                <!-- Time Card -->
+                <div class="flex flex-col items-center text-center p-6 sm:p-8 rounded-2xl bg-ivory-100/80 border border-gold-500/25">
+                    <div class="w-12 h-12 rounded-full bg-emerald-900/10 text-emerald-900 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xs uppercase tracking-[0.24em] text-gold-700 font-semibold mb-1">The Time</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-emerald-950">
+                        4:00 PM – 6:00 PM
+                    </h3>
+                    <p class="text-xs uppercase tracking-[0.18em] text-emerald-900/70 mt-1.5">
+                        Kindly arrive by 3:45 PM
+                    </p>
+                </div>
+            </div>
+
+            <!-- Venue Highlight Card -->
+            <div id="venue" class="rounded-2xl bg-ivory-100/90 border border-gold-500/30 p-6 sm:p-9 text-center">
+                <div class="w-12 h-12 rounded-full bg-emerald-900 text-gold-300 flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                    </svg>
+                </div>
+
+                <span class="text-xs uppercase tracking-[0.24em] text-gold-700 font-semibold">The Venue</span>
+                <h3 class="mt-1 font-display text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-950 tracking-wide">
+                    Abdelmoniem Ryadh Mosque
+                </h3>
+
+                <!-- Lotus Hall Pill -->
+                <div class="mt-3 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/15 border border-gold-500/40 text-emerald-950 font-serif text-lg sm:text-xl font-semibold">
+                    <svg class="w-4 h-4 text-gold-600" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C9.5 6 8 9.5 8 13c0 2.5 1.8 4.5 4 4.5s4-2 4-4.5c0-3.5-1.5-7-4-11zm-6.5 8.5C4.2 12.5 4 15 5.2 17c1.1 1.8 3.1 2.5 5.1 2.1-1.5-1.4-2.3-3.4-2.3-5.6 0-1 .2-2 .5-3-1.1 0-2.1 0-3 0zm13 0c-.9 0-1.9 0-3 0 .3 1 .5 2 .5 3 0 2.2-.8 4.2-2.3 5.6 2 .4 4-.3 5.1-2.1 1.2-2 1-4.5-.3-6.5z"/>
+                    </svg>
+                    <span>Lotus Hall</span>
+                </div>
+
+                <p class="mt-3 text-sm sm:text-base text-emerald-900/80">
+                    Smouha, Alexandria, Egypt
+                </p>
+
+                <!-- Action Buttons: Google Maps & Add to Calendar -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Abdelmoniem+Ryadh+Mosque+Smouha+Alexandria+Egypt"
+                       target="_blank" rel="noopener noreferrer"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-emerald-900 hover:bg-emerald-850 text-ivory-50 text-xs sm:text-sm uppercase tracking-[0.18em] font-medium shadow-md transition-all active:scale-95">
+                        <svg class="w-4 h-4 text-gold-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/>
+                        </svg>
+                        <span>View on Google Maps</span>
+                    </a>
+
+                    <div class="relative w-full sm:w-auto">
+                        <button id="calendar-dropdown-btn" type="button"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full border border-gold-600/60 bg-ivory-50 hover:bg-gold-500/10 text-emerald-950 text-xs sm:text-sm uppercase tracking-[0.18em] font-medium transition-all active:scale-95 cursor-pointer">
+                            <svg class="w-4 h-4 text-gold-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                            </svg>
+                            <span>Add to Calendar</span>
+                        </button>
+
+                        <!-- Calendar Options Popover -->
+                        <div id="calendar-menu" class="hidden absolute left-0 right-0 sm:left-auto sm:right-0 mt-2 w-full sm:w-60 rounded-2xl bg-ivory-50 border border-gold-500/40 shadow-xl py-2 z-20 text-left">
+                            <a id="google-cal-link" href="#" target="_blank" rel="noopener noreferrer"
+                               class="flex items-center gap-3 px-4 py-2.5 text-xs uppercase tracking-wider text-emerald-950 hover:bg-gold-500/15 transition-colors">
+                                <span class="w-2 h-2 rounded-full bg-emerald-800"></span>
+                                Google Calendar
+                            </a>
+                            <button id="download-ics-btn" type="button"
+                                class="w-full flex items-center gap-3 px-4 py-2.5 text-xs uppercase tracking-wider text-emerald-950 hover:bg-gold-500/15 transition-colors text-left cursor-pointer">
+                                <span class="w-2 h-2 rounded-full bg-gold-500"></span>
+                                Apple / Outlook (.ics)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. INTERACTIVE RSVP & DU'A GUESTBOOK SECTION -->
+        <section id="rsvp" class="reveal bg-ivory-50/95 rounded-[2rem] p-6 sm:p-12 shadow-[0_20px_60px_-15px_rgba(9,43,33,0.1)] border border-gold-500/35">
+            <div class="text-center max-w-lg mx-auto mb-10">
+                <p class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-gold-700 font-semibold mb-2">
+                    Kindly Respond &amp; Leave a Blessing
+                </p>
+                <h2 class="font-display text-2xl sm:text-4xl text-emerald-900 tracking-[0.08em] uppercase">
+                    RSVP &amp; Wishes
+                </h2>
+                <p class="mt-3 font-serif italic text-lg text-emerald-900/80">
+                    Your presence and heartfelt du&rsquo;a are the greatest gifts we could ask for.
+                </p>
+            </div>
+
+            <!-- RSVP & Blessing Form -->
+            <form id="rsvp-form" class="max-w-xl mx-auto space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="guest-name" class="block text-xs uppercase tracking-[0.18em] text-emerald-900 font-semibold mb-2">
+                            Your Full Name *
+                        </label>
+                        <input id="guest-name" type="text" required placeholder="e.g. Ahmed Hassan"
+                            class="w-full px-4 py-3 rounded-xl bg-ivory-100/80 border border-gold-500/35 focus:border-emerald-900 focus:ring-2 focus:ring-emerald-900/10 outline-none text-emerald-950 placeholder:text-emerald-950/35 text-sm transition-all">
+                    </div>
+
+                    <div>
+                        <label for="guest-count" class="block text-xs uppercase tracking-[0.18em] text-emerald-900 font-semibold mb-2">
+                            Number of Guests
+                        </label>
+                        <select id="guest-count"
+                            class="w-full px-4 py-3 rounded-xl bg-ivory-100/80 border border-gold-500/35 focus:border-emerald-900 focus:ring-2 focus:ring-emerald-900/10 outline-none text-emerald-950 text-sm transition-all">
+                            <option value="1">1 Guest (Just Me)</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests (Family)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Attendance Selection Pills -->
+                <div>
+                    <span class="block text-xs uppercase tracking-[0.18em] text-emerald-900 font-semibold mb-2">
+                        Will you be attending? *
+                    </span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="cursor-pointer">
+                            <input type="radio" name="attendance" value="attending" checked class="peer sr-only">
+                            <div class="flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl border border-gold-500/40 bg-ivory-100/70 peer-checked:bg-emerald-900 peer-checked:text-ivory-50 peer-checked:border-emerald-900 text-emerald-950 text-xs sm:text-sm font-medium transition-all">
+                                <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                </svg>
+                                <span>Joyfully Attending, Insha'Allah</span>
+                            </div>
+                        </label>
+
+                        <label class="cursor-pointer">
+                            <input type="radio" name="attendance" value="declined" class="peer sr-only">
+                            <div class="flex items-center justify-center gap-2.5 px-4 py-3.5 rounded-xl border border-gold-500/40 bg-ivory-100/70 peer-checked:bg-emerald-900 peer-checked:text-ivory-50 peer-checked:border-emerald-900 text-emerald-950 text-xs sm:text-sm font-medium transition-all">
+                                <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+                                </svg>
+                                <span>Sending Warm Wishes From Afar</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Blessing / Du'a Note -->
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <label for="guest-wish" class="block text-xs uppercase tracking-[0.18em] text-emerald-900 font-semibold">
+                            Du&rsquo;a or Blessing for Mohamed &amp; Malak
+                        </label>
+                        <button type="button" id="insert-dua-btn"
+                            class="text-[11px] text-gold-700 hover:text-emerald-900 underline underline-offset-2 font-medium cursor-pointer">
+                            + Insert Sunnah Du&rsquo;a
+                        </button>
+                    </div>
+                    <textarea id="guest-wish" rows="3" placeholder="Barakallahu lakuma wa baraka 'alaykuma wa jama'a baynakuma fi khayr..."
+                        class="w-full px-4 py-3 rounded-xl bg-ivory-100/80 border border-gold-500/35 focus:border-emerald-900 focus:ring-2 focus:ring-emerald-900/10 outline-none text-emerald-950 placeholder:text-emerald-950/35 text-sm transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Setup Reminder Banner (Automatically hides once GROOM_WHATSAPP is customized) -->
+                <div id="whatsapp-setup-notice" class="hidden p-3.5 rounded-xl bg-amber-50 border border-amber-300/80 text-amber-950 text-xs leading-relaxed">
+                    <strong class="font-semibold">Host Setup Reminder:</strong> Open <code class="px-1.5 py-0.5 rounded bg-amber-100 font-mono">index.html</code> and replace <code class="px-1.5 py-0.5 rounded bg-amber-100 font-mono">GROOM_WHATSAPP = "201000000000"</code> near the top of the <code class="px-1.5 py-0.5 rounded bg-amber-100 font-mono">&lt;script&gt;</code> tag with your Egyptian WhatsApp number (e.g., <code class="px-1.5 py-0.5 rounded bg-amber-100 font-mono">"201012345678"</code>) before sharing.
+                </div>
+
+                <button type="submit"
+                    class="w-full py-4 px-8 rounded-full bg-gold-gradient text-emerald-950 font-semibold text-xs sm:text-sm uppercase tracking-[0.22em] shadow-md hover:shadow-lg transition-all active:scale-[0.99] cursor-pointer inline-flex items-center justify-center gap-2.5">
+                    <span>Confirm via WhatsApp &amp; Post Wish</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
+                    </svg>
+                </button>
+            </form>
+
+            <!-- Guestbook Wishes Feed -->
+            <div class="mt-12 pt-10 border-t border-gold-500/25">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="font-display text-lg sm:text-xl text-emerald-950 tracking-wider uppercase">
+                        Blessings &amp; Prayers
+                    </h3>
+                    <span id="wishes-count-badge" class="px-3 py-1 rounded-full bg-emerald-900/10 text-emerald-900 text-xs font-semibold">
+                        0 Wishes
+                    </span>
+                </div>
+
+                <div id="wishes-feed" class="space-y-4 max-h-[420px] overflow-y-auto pr-1">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-emerald-950 text-ivory-200/80 py-12 px-6 text-center border-t border-gold-500/30">
+        <div class="max-w-xl mx-auto">
+            <p class="font-arabic text-xl sm:text-2xl text-gold-300 mb-2" dir="rtl">
+                بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+            </p>
+            <p class="font-serif italic text-base sm:text-lg text-ivory-100/90 mb-6">
+                &ldquo;May Allah bless you both, shower His blessings upon you, and unite you in goodness.&rdquo;
+            </p>
+
+            <div class="w-12 h-px bg-gold-500/40 mx-auto mb-5"></div>
+
+            <p class="font-display text-sm tracking-[0.25em] text-gold-300 uppercase">
+                Mohamed &amp; Malak
+            </p>
+            <p class="mt-1 text-xs tracking-[0.2em] text-ivory-200/60 uppercase">
+                25 &bull; 12 &bull; 2026 &mdash; Alexandria, Egypt
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================== INTERACTIVE SCRIPT ==================== -->
+    <script>
+        /* ======================================================================
+           HOST CONFIGURATION — MOHAMED'S WHATSAPP NUMBER
+           Format: Country code + number WITHOUT '+' or spaces
+        ====================================================================== */
+        const GROOM_WHATSAPP = "201019933186";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            /* 1. TOAST NOTIFICATION HELPER */
+            const toastBanner = document.getElementById('toast-banner');
+            const toastMessage = document.getElementById('toast-message');
+            let toastTimer = null;
+
+            function showToast(msg) {
+                toastMessage.textContent = msg;
+                toastBanner.classList.remove('opacity-0', 'translate-y-4');
+                toastBanner.classList.add('opacity-100', 'translate-y-0');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    toastBanner.classList.add('opacity-0', 'translate-y-4');
+                    toastBanner.classList.remove('opacity-100', 'translate-y-0');
+                }, 3200);
+            }
+
+            /* 2. ENVELOPE COVER OVERLAY */
+            const envelopeCover = document.getElementById('envelope-cover');
+            const openBtn = document.getElementById('open-invitation-btn');
+            document.body.style.overflow = 'hidden';
+
+            openBtn.addEventListener('click', () => {
+                envelopeCover.classList.add('opened');
+                document.body.style.overflow = '';
+            });
+
+            /* 3. REVEAL ON SCROLL */
+            const revealEls = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach(el => observer.observe(el));
+
+            /* 4. LIVE COUNTDOWN TIMER (Friday, Dec 25, 2026 at 4:00 PM EET / UTC+2) */
+            const eventDate = new Date('2026-12-25T16:00:00+02:00').getTime();
+            const cdDays = document.getElementById('cd-days');
+            const cdHours = document.getElementById('cd-hours');
+            const cdMinutes = document.getElementById('cd-minutes');
+            const cdSeconds = document.getElementById('cd-seconds');
+            const cdStatus = document.getElementById('countdown-status');
+
+            function updateCountdown() {
+                const now = Date.now();
+                const diff = eventDate - now;
+
+                if (diff <= 0) {
+                    cdDays.textContent = '00';
+                    cdHours.textContent = '00';
+                    cdMinutes.textContent = '00';
+                    cdSeconds.textContent = '00';
+                    cdStatus.textContent = 'Today is our blessed day! Barakallahu lakuma!';
+                    return;
+                }
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                const seconds = Math.floor((diff / 1000) % 60);
+
+                cdDays.textContent = String(days).padStart(2, '0');
+                cdHours.textContent = String(hours).padStart(2, '0');
+                cdMinutes.textContent = String(minutes).padStart(2, '0');
+                cdSeconds.textContent = String(seconds).padStart(2, '0');
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            /* 5. CELEBRATION AUDIO TRACK (music.mp3 in repository root) */
+            const audioEl = document.getElementById('celebration-audio');
+            const audioBtn = document.getElementById('audio-toggle-btn');
+            const iconOff = document.getElementById('audio-icon-off');
+            const iconOn = document.getElementById('audio-icon-on');
+            let isPlaying = false;
+
+            function setPlayingState(playing) {
+                isPlaying = playing;
+                if (playing) {
+                    iconOff.classList.add('hidden');
+                    iconOn.classList.remove('hidden');
+                } else {
+                    iconOn.classList.add('hidden');
+                    iconOff.classList.remove('hidden');
+                }
+            }
+
+            audioBtn.addEventListener('click', async () => {
+                if (!isPlaying) {
+                    try {
+                        await audioEl.play();
+                        setPlayingState(true);
+                    } catch {
+                        setPlayingState(false);
+                        showToast('Upload music.mp3 to your repository to enable playback');
+                    }
+                } else {
+                    audioEl.pause();
+                    setPlayingState(false);
+                }
+            });
+
+            audioEl.addEventListener('pause', () => setPlayingState(false));
+            audioEl.addEventListener('play', () => setPlayingState(true));
+
+            /* 6. SHARE INVITATION BUTTON */
+            const shareBtn = document.getElementById('share-btn');
+            shareBtn.addEventListener('click', async () => {
+                const shareData = {
+                    title: 'Mohamed & Malak — Katb Ketab Invitation',
+                    text: 'You are cordially invited to the Katb Ketab of Mohamed & Malak on Friday, December 25, 2026 at Abdelmoniem Ryadh Mosque (Lotus Hall), Smouha, Alexandria.',
+                    url: window.location.href
+                };
+
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        if (err.name === 'AbortError') return;
+                    }
+                }
+
+                try {
+                    await navigator.clipboard.writeText(window.location.href);
+                    showToast('Invitation link copied to clipboard');
+                } catch {
+                    showToast('Copy the link from your browser address bar');
+                }
+            });
+
+            /* 7. ADD TO CALENDAR (GOOGLE + .ICS DOWNLOAD) */
+            const calBtn = document.getElementById('calendar-dropdown-btn');
+            const calMenu = document.getElementById('calendar-menu');
+            const googleCalLink = document.getElementById('google-cal-link');
+            const downloadIcsBtn = document.getElementById('download-ics-btn');
+
+            const calParams = new URLSearchParams({
+                action: 'TEMPLATE',
+                text: 'Mohamed & Malak — Katb Ketab Ceremony',
+                dates: '20261225T140000Z/20261225T160000Z',
+                details: 'Together with their families, Mohamed & Malak joyfully invite you to witness and celebrate their Katb Ketab.',
+                location: 'Abdelmoniem Ryadh Mosque (Lotus Hall), Smouha, Alexandria, Egypt'
+            });
+            googleCalLink.href = `https://calendar.google.com/calendar/render?${calParams.toString()}`;
+
+            calBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                calMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', () => calMenu.classList.add('hidden'));
+
+            downloadIcsBtn.addEventListener('click', () => {
+                const icsContent = [
+                    'BEGIN:VCALENDAR',
+                    'VERSION:2.0',
+                    'PRODID:-//Mohamed and Malak//Katb Ketab Invitation//EN',
+                    'BEGIN:VEVENT',
+                    'DTSTART:20261225T140000Z',
+                    'DTEND:20261225T160000Z',
+                    'SUMMARY:Mohamed & Malak — Katb Ketab Ceremony',
+                    'DESCRIPTION:Together with their families, Mohamed & Malak joyfully invite you to witness and celebrate their Katb Ketab.',
+                    'LOCATION:Abdelmoniem Ryadh Mosque (Lotus Hall), Smouha, Alexandria, Egypt',
+                    'END:VEVENT',
+                    'END:VCALENDAR'
+                ].join('\r\n');
+
+                const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'Mohamed-and-Malak-Katb-Ketab.ics';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                calMenu.classList.add('hidden');
+                showToast('Calendar file (.ics) downloaded');
+            });
+
+            /* 8. RSVP FORM, WHATSAPP REDIRECT & GUESTBOOK WISHES */
+            const setupNotice = document.getElementById('whatsapp-setup-notice');
+            if (!GROOM_WHATSAPP || GROOM_WHATSAPP === '201000000000') {
+                setupNotice.classList.remove('hidden');
+            }
+
+            const insertDuaBtn = document.getElementById('insert-dua-btn');
+            const wishInput = document.getElementById('guest-wish');
+            insertDuaBtn.addEventListener('click', () => {
+                wishInput.value = "Barakallahu lakuma wa baraka 'alaykuma wa jama'a baynakuma fi khayr. Wishing you a lifetime of love, tranquility, and barakah!";
+                wishInput.focus();
+            });
+
+            const STORAGE_KEY = 'mohamed_malak_wishes_v1';
+
+            function loadWishes() {
+                try {
+                    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+                    return Array.isArray(saved) ? saved : [];
+                } catch {
+                    return [];
+                }
+            }
+
+            function escapeHtml(str) {
+                return str.replace(/[&<>"']/g, m => ({
+                    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+                }[m]));
+            }
+
+            const wishesFeed = document.getElementById('wishes-feed');
+            const wishesBadge = document.getElementById('wishes-count-badge');
+
+            function renderWishes() {
+                const wishes = loadWishes();
+                wishesBadge.textContent = `${wishes.length} ${wishes.length === 1 ? 'Wish' : 'Wishes'}`;
+
+                if (!wishes.length) {
+                    wishesFeed.innerHTML = `
+                        <p class="text-center font-serif italic text-base text-emerald-900/65 py-6">
+                            No blessings posted yet — be the first to leave a du&rsquo;a for Mohamed &amp; Malak.
+                        </p>
+                    `;
+                    return;
+                }
+
+                wishesFeed.innerHTML = wishes.map(w => `
+                    <article class="p-4 sm:p-5 rounded-2xl bg-ivory-100/80 border border-gold-500/25">
+                        <div class="flex items-center justify-between gap-2 mb-1.5">
+                            <h4 class="font-semibold text-sm text-emerald-950">${escapeHtml(w.name)}</h4>
+                            <span class="text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
+                                w.status === 'attending'
+                                    ? 'bg-emerald-900/10 text-emerald-900'
+                                    : 'bg-gold-500/20 text-gold-700'
+                            } font-semibold">
+                                ${w.status === 'attending' ? 'Attending' : 'Warm Wishes'}
+                            </span>
+                        </div>
+                        <p class="font-serif italic text-base text-emerald-900/85 leading-relaxed">
+                            &ldquo;${escapeHtml(w.message)}&rdquo;
+                        </p>
+                    </article>
+                `).join('');
+            }
+            renderWishes();
+
+            const rsvpForm = document.getElementById('rsvp-form');
+            rsvpForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const name = document.getElementById('guest-name').value.trim();
+                const count = document.getElementById('guest-count').value;
+                const attendance = document.querySelector('input[name="attendance"]:checked').value;
+                const wish = wishInput.value.trim();
+
+                if (!name) return;
+
+                // Save wish to local guestbook if provided
+                if (wish) {
+                    const wishes = loadWishes();
+                    wishes.unshift({ name, status: attendance, message: wish });
+                    try {
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify(wishes));
+                    } catch { /* ignore storage quota errors */ }
+                    renderWishes();
+                }
+
+                // Build WhatsApp RSVP message
+                const statusText = attendance === 'attending'
+                    ? `Joyfully Attending, Insha'Allah (${count} ${count === '1' ? 'Guest' : 'Guests'})`
+                    : 'Sending Warm Wishes From Afar';
+
+                const waLines = [
+                    `Assalamu Alaykum Mohamed & Malak! 🌿`,
+                    ``,
+                    `*Katb Ketab RSVP*`,
+                    `• *Name:* ${name}`,
+                    `• *Response:* ${statusText}`
+                ];
+
+                if (wish) {
+                    waLines.push(`• *Du'a / Blessing:* ${wish}`);
+                }
+
+                const cleanNumber = GROOM_WHATSAPP.replace(/[^\d]/g, '');
+                const waUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(waLines.join('\n'))}`;
+
+                showToast('Opening WhatsApp to send your RSVP...');
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+                rsvpForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
